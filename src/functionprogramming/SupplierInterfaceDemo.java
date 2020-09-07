@@ -7,5 +7,6 @@ public class SupplierInterfaceDemo {
         Supplier<Integer> supplier=()->(int)(Math.random()*1000);
         System.out.println(supplier.get());
         System.out.println(supplier.get());
+
     }
 }

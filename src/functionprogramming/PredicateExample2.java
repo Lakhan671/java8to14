@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 
 public class PredicateExample2 {
     public static void main(String[] args) {
-        Predicate<Instructor> p1=(i)->i.isOnlinesCourses()==true;
+        Predicate<Instructor> p1=Instructor::isOnlinesCourses;
         Predicate<Instructor>p2=i->i.getYearsOfExperience()>10;
         List<Instructor>instructors=Instructors.getAll();
         instructors.forEach(instructor -> {
