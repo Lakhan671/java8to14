@@ -15,7 +15,5 @@ public class StreamFindAnyAndFirstExample {
         instructorOptional = Instructors.getAll().stream().findFirst();
         if (instructorOptional.isPresent())
             System.out.println(instructorOptional.get());
-
-
     }
 }
