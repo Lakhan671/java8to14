@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 
 public class BiFunctionExample {
     public static void main(String[] args) {
-        Predicate<Instructor> p1=(p)->p.isOnlinesCourses()==true;
+        Predicate<Instructor> p1=(p)->p.isOnlinesCourses();
         BiFunction<Predicate<Instructor>,List<Instructor>, Map<String,Integer>> mapFunction=(pp,instructors )-> {
             Map<String,Integer>map=new HashMap<>();
             instructors.forEach(instructor -> {

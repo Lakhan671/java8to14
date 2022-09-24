@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 public class PredicateWithBiConsumerExample {
     public static void main(String[] args) {
         List<Instructor> instructors=Instructors.getAll();
-        Predicate<Instructor> p1=p->p.isOnlinesCourses()==true;// && p.getYearsOfExperience()>10;
+        Predicate<Instructor> p1=p->p.isOnlinesCourses();// && p.getYearsOfExperience()>10;
        Predicate<Instructor>p2=p->p.getYearsOfExperience()>10;
         BiConsumer<String,List<String>>stringListBiConsumer=(name,courses)->{
             System.out.println("Name: "+ name+" courses: "+courses);

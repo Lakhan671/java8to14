@@ -19,5 +19,7 @@ public class FunctionExample2 {
            return map;
         });
         System.out.println(mapFunction.apply(Instructors.getAll()));
+
+
     }
 }

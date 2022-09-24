@@ -3,7 +3,7 @@ package functionprogramming;
 interface FunDemo{
 
         public void subString(String x);
-        public default void printd(){
+        public default void print(){
         System.out.println("My name is lakhan singh");
     }
         public default void showName(){

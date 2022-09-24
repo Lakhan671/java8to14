@@ -9,7 +9,7 @@ public class BipredicateExample {
     public static void main(String[] args) {
         List<Instructor> instructors=Instructors.getAll();
 
-        BiPredicate<Boolean,Integer>p3=(online,experience)-> online==true && experience>10;
+        BiPredicate<Boolean,Integer>p3=(online,experience)-> online && experience>10;
 
         BiConsumer<String, List<String>> stringListBiConsumer=(name, courses)->{
             System.out.println("Name: "+ name+" courses: "+courses);

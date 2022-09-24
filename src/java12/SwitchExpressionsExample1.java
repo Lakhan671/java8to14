@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class SwitchExpressionsExample1 {
     public static void main(String[] args) {
-        String month="JANUARY"; 
+        String month="APRIL";
         String quarter = switch(month){
             case "JANUARY", "FEBURARY", "MARCH" -> {
                var isLeapYear =  LocalDate.now().isLeapYear();

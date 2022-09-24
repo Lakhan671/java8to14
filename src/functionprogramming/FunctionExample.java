@@ -11,9 +11,11 @@ public class FunctionExample {
         Function<String,String> lowercaseFunction = String::toLowerCase;
         System.out.println(lowercaseFunction.apply("PROGRAMMING"));
         Function<String, String> concatFunction = (s) -> s.concat(" In Java");
+        Function<String, Integer> concatFunction2 = (s) -> Integer.parseInt(s);
 
         System.out.println(lowercaseFunction.andThen(concatFunction).apply("PROGRAMMING"));
         System.out.println(lowercaseFunction.compose(concatFunction).apply("PROGRAMMING"));
+        System.out.println("apple".compareTo("banana"));
 
     }
 }
