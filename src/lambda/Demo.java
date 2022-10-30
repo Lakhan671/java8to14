@@ -15,7 +15,8 @@ public class Demo {
 
 
     public static void main(String[] args) throws ParseException {
-          
+          String str="IOException | dcdcdacadcac acascasc";
+        System.out.println(str.split("\\|")[1]);
     }
 }
 class T2 extends Thread{

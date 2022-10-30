@@ -2,12 +2,11 @@ package stream.collectorsOperations;
 
 import functionprogramming.Instructor;
 import functionprogramming.Instructors;
-
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class CollectorsMappingExample {
+public class  CollectorsMappingExample {
     public static void main(String[] args) {
         List<String>namesList= Instructors.getAll().stream()
                 .map(Instructor::getName).collect(Collectors.toList());
