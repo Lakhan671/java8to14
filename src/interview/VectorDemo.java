@@ -9,11 +9,11 @@ public class VectorDemo {
         Vector<Double>x=new Vector<Double>();
         Vector<Integer>y=new Vector<Integer>();
         System.out.print(x.getClass()==y.getClass());
-        System.out.print(x.equals(y));
+        System.out.print(x.equals(y)+" ");
         x.add(1.0);
         y.add(1);
         System.out.print(x.getClass()==y.getClass());
-        System.out.print(x.equals(y));
+        System.out.print(x.equals(y)+" ");
 
         List<Double>xx=new ArrayList<>();
         List<Integer>yy=new ArrayList<>();

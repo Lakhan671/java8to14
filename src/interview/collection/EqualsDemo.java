@@ -16,7 +16,7 @@ class Flight{
         Flight flight = new Flight("Emirates");
         Flight flight2 = new Flight("Emirates");
         System.out.println(flight.equals(flight2));
-        System.console().writer().println(879877);
+
 
 
     }}

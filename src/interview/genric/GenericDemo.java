@@ -9,7 +9,7 @@ public class GenericDemo {
           List<? super Animal> aObjects=new ArrayList<>();
           aObjects.add(new Dog());
           aObjects.add(new Animal());
-         // aObjects.add(AnyAnimal());
+          //aObjects.add(AnyAnimal());
     }
 }
 abstract  class AnyAnimal{

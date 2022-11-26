@@ -9,5 +9,6 @@ public class StringDemo {
         final String st22="word";
         String s3=s11+st22;
         System.out.println(s1==s3);
+        System.out.println(st==new String(st));
     }
 }
