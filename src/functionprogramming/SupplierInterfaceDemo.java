@@ -8,5 +8,6 @@ public class SupplierInterfaceDemo {
         System.out.println(supplier.get());
         System.out.println(supplier.get());
 
+
     }
 }

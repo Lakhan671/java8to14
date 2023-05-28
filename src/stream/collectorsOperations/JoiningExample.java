@@ -14,7 +14,8 @@ public class JoiningExample {
         System.out.println(str2);
         String st3=Stream.of("E","F","H").collect(Collectors.joining(",","{","}"));
         System.out.println(st3);
-        String str4= Instructors.getAll().stream().map(Instructor::getName).collect(Collectors.joining(",","{","}"));
+        String str4= Instructors.getAll().stream().map(Instructor::getName).
+                collect(Collectors.joining(",","{","}"));
         System.out.println(str4);
     }
 
