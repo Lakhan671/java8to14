@@ -3,6 +3,8 @@ package stream.collectorsOperations;
 import functionprogramming.Instructor;
 import functionprogramming.Instructors;
 
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -12,5 +14,9 @@ public class CountingExample {
         System.out.println(count);
         long count2= Instructors.getAll().stream().filter(Instructor::isOnlinesCourses).collect(Collectors.counting());
         System.out.println(count2);
+        Instructors.getAll().stream().collect(Collectors.groupingBy(Instructor::isOnlinesCourses,Collectors.mapping(Instructor::getName,Collectors.toList()))).
+                forEach((a,b)->{
+                    System.out.println(a+" "+b);
+                } );
     }
 }
