@@ -3,9 +3,9 @@ package stream.collectorsOperations;
 
 import functionprogramming.Instructor;
 import functionprogramming.Instructors;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class GroupingExample3 {
@@ -30,6 +30,10 @@ public class GroupingExample3 {
 
         instructorByExpAndOnline.forEach((key, value) -> {
             System.out.println("key  = " + key + " value = " + value);
+        });
+        Instructors.getAll().stream().collect(Collectors.groupingBy(i->i.getYearsOfExperience()>10?"S":"J",
+                HashMap::new,Collectors.mapping(Instructor::getName,Collectors.toList()))).forEach((key,value)->{
+            System.out.println("key="+key+"  Value="+value);
         });
     }
 }
