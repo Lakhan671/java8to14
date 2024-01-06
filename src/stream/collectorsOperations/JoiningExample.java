@@ -17,6 +17,7 @@ public class JoiningExample {
         String str4= Instructors.getAll().stream().map(Instructor::getName).
                 collect(Collectors.joining(",","{","}"));
         System.out.println(str4);
+
     }
 
 }
